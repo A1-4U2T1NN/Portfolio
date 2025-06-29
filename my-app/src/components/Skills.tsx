@@ -12,8 +12,6 @@ import Git from "../icons/Git.svg";
 import GitHub from "../icons/GitHub.svg";
 import VSCode from "../icons/VSCode.svg";
 import HTML5 from "../icons/HTML5.svg";
-import MongoDB from "../icons/MongoDB.svg";
-import Mongoose from "../icons/Mongoose.js.svg";
 import Next from "../icons/Next.js.svg";
 import PyCharm from "../icons/PyCharm.svg";
 import Slack from "../icons/Slack.svg";
@@ -38,13 +36,11 @@ const skillCategories = {
     { name: "Express", icon: Express },
     { name: "Tailwind CSS", icon: Tailwind },
     { name: "Next.js", icon: Next },
-    { name: "Mongoose", icon: Mongoose },
   ],
   "Tools & Technologies": [
     { name: "Git", icon: Git },
     { name: "GitHub", icon: GitHub },
     { name: "VS Code", icon: VSCode },
-    { name: "MongoDB", icon: MongoDB },
     { name: "PyCharm", icon: PyCharm },
     { name: "Slack", icon: Slack },
     { name: "Vite", icon: Vite },
@@ -55,17 +51,17 @@ const skillCategories = {
 };
 
 const Skills = () => {
-    const fallbackSrc = "https://via.placeholder.com/32?text=?" // or your local fallback icon
+    const fallbackSrc = "https://via.placeholder.com/32?text=?"
   
     return (
-      <section className="bg-white py-12 px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-bold text-center underline mb-10">
+      <section className="py-12 px-4 sm:px-6 lg:px-8">
+        <h1 className="text-3xl font-bold text-center mb-10 text-white">
           Technical Skills
         </h1>
   
         {Object.entries(skillCategories).map(([category, skills]) => (
           <div key={category} className="mb-12">
-            <h2 className="text-xl font-semibold mb-6 text-gray-700">
+            <h2 className="text-xl font-semibold mb-6 text-white">
               {category}
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 text-center">
@@ -84,7 +80,7 @@ const Skills = () => {
                         onError={() => setImgSrc(fallbackSrc)}
                       />
                     </div>
-                    <p className="text-sm font-medium text-gray-800">{name}</p>
+                    <p className="text-sm font-medium text-white">{name}</p>
                   </div>
                 );
               })}

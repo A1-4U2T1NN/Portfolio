@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-200 py-8 mt-12">
+    <footer className="bg-black text-gray-200 py-8 mt-12">
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
         {/* Brand / Name */}
         <div className="text-center md:text-left">
