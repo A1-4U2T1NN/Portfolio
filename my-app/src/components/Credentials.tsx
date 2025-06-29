@@ -1,32 +1,26 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import SMLogo from "../icons/SA-CSM.png";
+import CDLogo from "../icons/CDLogo.jpeg";
 
 const credentials = [
   {
-    title: "AWS Certified Cloud Practitioner",
-    issuer: "Amazon Web Services",
-    year: "2024",
-    description: "Fundamentals of cloud computing, core AWS services, security, and pricing.",
-    logo: "https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png",
-    link: "https://aws.amazon.com/certification/certified-cloud-practitioner/"
+    title: "Certified Software Engineer",
+    issuer: "Code Differently",
+    year: "2025",
+    description: "Understands the foundations of digital computing and programming to understand how to build complex software systems at scale. Also, how modern collaborative software development takes place within organizations and teams through practical application.",
+    logo: CDLogo,
+    link: "https://drive.google.com/file/d/1tqR8wbCJRAY8Sn9t8SGQg3n5InZlW1NK/view?usp=share_link"
   },
   {
-    title: "Figma Advanced UX Design",
-    issuer: "Figma Academy",
-    year: "2023",
-    description: "Advanced user experience design strategies using Figma's collaborative tools.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
-    link: "https://figma.com/certifications/advanced-ux"
-  },
-  {
-    title: "Docker Fundamentals",
-    issuer: "Docker, Inc.",
+    title: "Certified ScrumMaster",
+    issuer: "ScrumAlliance",
     year: "2024",
-    description: "Introduction to containerization, Docker CLI, images, and DockerHub workflows.",
-    logo: "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png",
-    link: "https://www.docker.com/certifications/"
-  }
+    description: "Understands team accountabilities, events, and artifacts, as well as how to guide your team in the effective application of scrum.",
+    logo: SMLogo,
+    link: "https://drive.google.com/file/d/18CZ5F9EMHBx9350rM4QKQHZw3t7weltw/view?usp=share_link"
+  },
 ];
 
 const CredentialsCarousel = () => {
@@ -49,19 +43,20 @@ const CredentialsCarousel = () => {
   const renderSideCard = (index: number, position: "left" | "right") => (
     <motion.div
       key={index + position}
-      className={`absolute ${position === "left" ? "left-[7%]" : "right-[7%]"} w-[360px] h-[500px] bg-white rounded-2xl shadow-md blur-[1px] opacity-70 scale-95 z-10 pointer-events-none overflow-hidden flex flex-col items-center text-center px-4 py-6`}
+      className={`absolute ${position === "left" ? "left-[7%]" : "right-[7%]"} w-[360px] h-[500px] rounded-2xl shadow-md blur-[1px] opacity-70 scale-95 z-10 pointer-events-none overflow-hidden flex flex-col items-center text-center px-4 py-6`}
+      style={{ backgroundColor: "#282828", color: "#d1d1d1" }}
     >
       <img src={credentials[index].logo} alt="logo" className="w-20 h-20 object-contain mb-3" />
-      <p className="text-lg font-semibold mb-1">{credentials[index].title}</p>
-      <p className="text-gray-700 text-sm">{credentials[index].issuer}</p>
-      <p className="text-gray-500 text-sm mb-2">{credentials[index].year}</p>
-      <p className="text-gray-600 text-sm line-clamp-4">{credentials[index].description}</p>
+      <p className="text-lg font-semibold mb-1" style={{ color: "#915f6e" }}>{credentials[index].title}</p>
+      <p className="text-sm">{credentials[index].issuer}</p>
+      <p className="text-sm mb-2 text-gray-400">{credentials[index].year}</p>
+      <p className="text-sm line-clamp-4 text-gray-400">{credentials[index].description}</p>
     </motion.div>
   );
 
   return (
-    <div className="relative w-full h-screen flex flex-col justify-center items-center bg-gray-50 px-6 py-10">
-      <h2 className="text-4xl font-bold text-center mb-12">Credentials</h2>
+    <div className="relative w-full h-screen flex flex-col justify-center items-center px-6 py-10">
+      <h2 className="text-white text-4xl font-bold text-center mb-12">Credentials</h2>
 
       <div className="relative w-full max-w-6xl flex items-center justify-center">
         {/* Navigation Arrows */}
@@ -93,20 +88,24 @@ const CredentialsCarousel = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.3 }}
-              className="z-20 w-[440px] h-[540px] bg-blue-50 rounded-3xl shadow-xl p-8 text-center flex flex-col items-center overflow-hidden"
+              className="z-20 w-[440px] h-[540px] rounded-3xl shadow-xl p-8 text-center flex flex-col items-center overflow-hidden"
+              style={{ backgroundColor: "#282828", color: "#d1d1d1" }}
             >
               <img src={credentials[current].logo} alt="logo" className="w-28 h-28 object-contain mb-6" />
-              <h3 className="text-2xl font-bold mb-2">{credentials[current].title}</h3>
-              <p className="text-gray-700 text-md mb-1">{credentials[current].issuer}</p>
-              <p className="text-gray-500 text-sm mb-4">{credentials[current].year}</p>
-              <p className="text-gray-600 text-base leading-relaxed px-4 mb-4">
+              <h3 className="text-2xl font-bold mb-2" style={{ color: "#915f6e" }}>{credentials[current].title}</h3>
+              <p className="text-md mb-1">{credentials[current].issuer}</p>
+              <p className="text-sm mb-4 text-gray-400">{credentials[current].year}</p>
+              <p className="text-base leading-relaxed px-4 mb-4 text-gray-300">
                 {credentials[current].description}
               </p>
               <a
                 href={credentials[current].link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-auto inline-block bg-blue-600 text-white text-sm px-4 py-2 rounded hover:bg-blue-700 transition"
+                className="mt-auto inline-block text-white text-sm px-4 py-2 rounded transition"
+                style={{
+                  backgroundColor: "#915f6e",
+                }}
               >
                 View Certificate
               </a>
