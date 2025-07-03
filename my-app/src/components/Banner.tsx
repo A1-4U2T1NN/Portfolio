@@ -23,13 +23,13 @@ function Banner() {
       {/* Overlay */}
       <div className="absolute inset-0 bg-grey-900 bg-opacity-50 z-0"></div>
 
-        {/* Bottom Gradient Overlay */}
-        <div
-  className="absolute -bottom-5 left-0 w-full h-32 z-10 pointer-events-none"
-  style={{
-    backgroundImage: "linear-gradient(to top, #121212, transparent)"
-  }}
-></div>
+      {/* Bottom Gradient Overlay */}
+      <div
+        className="absolute -bottom-5 left-0 w-full h-32 z-10 pointer-events-none"
+        style={{
+          backgroundImage: "linear-gradient(to top, #121212, transparent)",
+        }}
+      ></div>
 
       {/* Content */}
       <div className="relative z-10 text-white">
@@ -41,7 +41,8 @@ function Banner() {
           I am a <span style={{ color: "#915f6d" }}>Software Developer</span>
         </h2>
         <h3 className="text-2xl">
-          Welcome to my portfolio — take a look around and check out some of the projects I’ve been working on!
+          Welcome to my portfolio — take a look around and check out some of the
+          projects I’ve been working on!
         </h3>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-6">

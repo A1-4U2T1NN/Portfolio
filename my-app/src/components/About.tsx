@@ -50,16 +50,22 @@ function About() {
               <span className="font-semibold" style={{ color: "#915f6d" }}>
                 Chigazo Graham
               </span>
-              , a software engineer with a passion for building clean, intuitive systems that solve real-world problems.
+              , a software engineer with a passion for building clean, intuitive
+              systems that solve real-world problems.
             </p>
             <p className="text-base sm:text-lg leading-relaxed">
-              💡 I thrive at the intersection of logic and creativity, blending structure with imaginative thinking to craft software that’s both functional and elegant.
+              💡 I thrive at the intersection of logic and creativity, blending
+              structure with imaginative thinking to craft software that’s both
+              functional and elegant.
             </p>
             <p className="text-base sm:text-lg leading-relaxed">
-              🧠 I’m driven by curiosity, a love for innovation, and the challenge of making technology work smarter and more securely.
+              🧠 I’m driven by curiosity, a love for innovation, and the
+              challenge of making technology work smarter and more securely.
             </p>
             <p className="text-base sm:text-lg leading-relaxed">
-              🎧 Outside of code, you’ll likely find me listening to music, reading, or exploring new tools that sharpen my thinking and discipline.
+              🎧 Outside of code, you’ll likely find me listening to music,
+              reading, gaming, or exploring new tools that sharpen my thinking
+              and discipline.
             </p>
           </div>
         </div>
@@ -68,10 +74,19 @@ function About() {
       {/* Work Ethic Section */}
       <div className="mt-8 flex justify-center w-full px-4">
         <div className="max-w-4xl text-center space-y-4">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-center">My Approach</h2>
+          <h2 className="text-2xl sm:text-3xl font-semibold text-center">
+            My Approach
+          </h2>
           <p className="text-base sm:text-lg leading-relaxed">
             I approach my work with{" "}
-            <span className="font-medium text-[#915f6d]">proactive ownership</span> through taking initiative, staying adaptable, and always learning. I believe in writing thoughtful code, communicating clearly, and collaborating with purpose. Whether I’m working solo or with a team, I value consistency, clarity, and a mindset that aims to improve myself, the product, and the process.
+            <span className="font-medium text-[#915f6d]">
+              proactive ownership
+            </span>{" "}
+            through taking initiative, staying adaptable, and always learning. I
+            believe in writing thoughtful code, communicating clearly, and
+            collaborating with purpose. Whether I’m working solo or with a team,
+            I value consistency, clarity, and a mindset that aims to improve
+            myself, the product, and the process.
           </p>
         </div>
       </div>
@@ -79,9 +94,16 @@ function About() {
       {/* Areas of Interest Section */}
       <div className="mt-8 flex justify-center w-full px-4">
         <div className="max-w-4xl text-center space-y-4">
-          <h2 className="text-2xl sm:text-3xl font-semibold text-center">Areas of Interest</h2>
+          <h2 className="text-2xl sm:text-3xl font-semibold text-center">
+            Areas of Interest
+          </h2>
           <ul className="flex flex-wrap justify-center gap-3 sm:gap-4 text-white text-base sm:text-lg font-medium">
-            {["UI/UX Design", "Cybersecurity", "Automation", "Project Management"].map((item) => (
+            {[
+              "UI/UX Design",
+              "Cybersecurity",
+              "Automation",
+              "Project Management",
+            ].map((item) => (
               <li
                 key={item}
                 className="bg-[#915f6e] bg-opacity-10 px-4 py-2 rounded-xl shadow backdrop-blur-md"
