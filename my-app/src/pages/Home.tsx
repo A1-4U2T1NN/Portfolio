@@ -13,12 +13,24 @@ function Home() {
   return (
     <div style={{ backgroundColor: "#121212" }}>
       <Navbar />
-      <section id="Banner"><Banner /></section>
-      <section id="About"><About /></section>
-      <section id="Projects"><Projects /></section>
-      <section id="Skills"><Skills /></section>
-      <section id="Credentials"><Credentials /></section>
-      <section id="Contact"><Contact /></section>
+      <section id="Banner">
+        <Banner />
+      </section>
+      <section id="About">
+        <About />
+      </section>
+      <section id="Projects">
+        <Projects />
+      </section>
+      <section id="Skills">
+        <Skills />
+      </section>
+      <section id="Credentials">
+        <Credentials />
+      </section>
+      <section id="Contact">
+        <Contact />
+      </section>
       <Footer />
     </div>
   );

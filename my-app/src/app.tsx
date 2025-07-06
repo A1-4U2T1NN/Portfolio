@@ -1,5 +1,10 @@
 import React from "react";
-import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
 import ProjectGallery from "./pages/ProjectGallery";
 import NotFound from "./pages/NotFound";
 import Home from "./pages/Home";
@@ -10,19 +15,16 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="/Projects" element={<ProjectGallery />} />
       <Route path="/*" element={<NotFound />} />
-    </Route>
-  )
-)
+    </Route>,
+  ),
+);
 
-function App({routes}) {
-
+function App({ routes }) {
   return (
     <>
-     <RouterProvider router={router} />
+      <RouterProvider router={router} />
     </>
   );
 }
-
-
 
 export default App;

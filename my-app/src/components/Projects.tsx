@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import portfolioproject from "../assets/PortfolioProject.png";
 
 const projects = [
-
   {
     title: "Portfolio Website",
     description:
@@ -18,7 +17,9 @@ const projects = [
 function Projects() {
   return (
     <div className="py-12 px-4 sm:px-6 lg:px-8">
-      <h2 className="text-white text-3xl font-bold text-center mb-10">Projects</h2>
+      <h2 className="text-white text-3xl font-bold text-center mb-10">
+        Projects
+      </h2>
 
       <div className="max-w-6xl mx-auto space-y-12">
         {projects.map((project, index) => {
@@ -41,7 +42,10 @@ function Projects() {
 
               {/* Content */}
               <div className="w-full md:w-1/2 space-y-4">
-                <h3 className="text-xl font-semibold" style={{ color: "#915f6e" }}>
+                <h3
+                  className="text-xl font-semibold"
+                  style={{ color: "#915f6e" }}
+                >
                   {project.title}
                 </h3>
                 <p className="text-gray-400 text-sm">{project.description}</p>
