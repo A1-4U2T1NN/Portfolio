@@ -9,7 +9,7 @@ import Node from "../icons/Node.js.svg";
 import Express from "../icons/Express.svg";
 import Tailwind from "../icons/Tailwind.svg";
 import Git from "../icons/Git.svg";
-import GitHub from "../icons/GitHub.svg";
+import GitHub from "../icons/github.svg";
 import VSCode from "../icons/VSCode.svg";
 import HTML5 from "../icons/HTML5.svg";
 import Next from "../icons/Next.js.svg";
