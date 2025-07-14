@@ -94,7 +94,7 @@ function Projects() {
       </div>
 
       {/* See All Projects Button */}
-      <div className="mt-12 text-center">
+      {/* <div className="mt-12 text-center">
         <Link
           to="/Projects"
           className="inline-block font-medium py-2 px-6 rounded-full shadow transition"
@@ -105,7 +105,7 @@ function Projects() {
         >
           See All Projects
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }
