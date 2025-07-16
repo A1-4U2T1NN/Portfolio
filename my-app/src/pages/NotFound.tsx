@@ -1,5 +1,6 @@
 import React from "react";
 import NotFoundImage from "../assets/404.png";
+
 function NotFound() {
   return (
     <div className="flex flex-col items-center justify-start h-screen text-center px-4 pt-30">
