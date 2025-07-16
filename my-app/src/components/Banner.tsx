@@ -23,6 +23,13 @@ function Banner() {
       {/* Overlay */}
       <div className="absolute inset-0 bg-grey-900 bg-opacity-50 z-0"></div>
 
+      <div
+    className="absolute top-0 left-0 w-full h-32 z-10 pointer-events-none"
+    style={{
+      backgroundImage: "linear-gradient(to bottom, #121212, transparent)",
+    }}
+  ></div>
+
       {/* Bottom Gradient Overlay */}
       <div
         className="absolute -bottom-5 left-0 w-full h-32 z-10 pointer-events-none"
@@ -32,37 +39,38 @@ function Banner() {
       ></div>
 
       {/* Content */}
-      <div className="relative z-10 text-white">
-        <h1 className="text-4xl font-bold">
-          {getGreeting()}! My name is{" "}
-          <span style={{ color: "#915f6d" }}>Chigazo Graham</span>
-        </h1>
-        <h2 className="text-3xl font-semibold">
-          I am a <span style={{ color: "#915f6d" }}>Software Developer</span>
-        </h2>
-        <h3 className="text-2xl">
-          Welcome to my portfolio — take a look around and check out some of the
-          projects I’ve been working on!
-        </h3>
+      <div className="relative z-10 text-white px-6 py-4 w-screen" 
+     style={{ backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
+  <h1 className="text-4xl font-bold mb-2">
+    {getGreeting()}! My name is{" "}
+    <span style={{ color: "#915f6d" }}>Chigazo Graham</span>
+  </h1>
+  <h2 className="text-3xl font-semibold mb-2">
+    I am a <span style={{ color: "#915f6d" }}>Software Developer</span>
+  </h2>
+  <h3 className="text-2xl mb-4">
+    Welcome to my portfolio — take a look around and check out some of the
+    projects I’ve been working on!
+  </h3>
 
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-6">
-          <a
-            href="#Contact"
-            className="rounded-xl px-6 py-3 text-white transition duration-300"
-            style={{ backgroundColor: "#915f6e" }}
-          >
-            Contact Me
-          </a>
+  <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-4">
+    <a
+      href="#Contact"
+      className="rounded-xl px-6 py-3 text-white transition duration-300"
+      style={{ backgroundColor: "#915f6e" }}
+    >
+      Contact Me
+    </a>
 
-          <Link
-            to="/Projects"
-            className="hover:underline text-lg font-medium"
-            style={{ color: "#915f6e" }}
-          >
-            Explore My Projects →
-          </Link>
-        </div>
-      </div>
+    <Link
+      to="/Projects"
+      className="hover:underline text-lg font-medium"
+      style={{ color: "#915f6e" }}
+    >
+      Explore My Projects →
+    </Link>
+  </div>
+</div>
     </div>
   );
 }
