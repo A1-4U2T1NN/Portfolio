@@ -8,7 +8,7 @@ const projects = [
     description:
       "My personal portfolio showcasing projects, experience, and contact info. Designed for clarity and responsiveness.",
     tech: ["React", "Tailwind CSS"],
-    github: "https://github.com/your-username/portfolio",
+    github: "https://github.com/A1-4U2T1NN/Portfolio",
     demo: "",
     image: portfolioproject,
   },
@@ -18,7 +18,7 @@ function Projects() {
   return (
     <div className="py-12 px-4 sm:px-6 lg:px-8">
       <h2 className="text-white text-3xl font-bold text-center mb-10">
-        Projects
+        Featured Projects
       </h2>
 
       <div className="max-w-6xl mx-auto space-y-12">
@@ -94,7 +94,7 @@ function Projects() {
       </div>
 
       {/* See All Projects Button */}
-      {/* <div className="mt-12 text-center">
+      <div className="mt-12 text-center">
         <Link
           to="/Projects"
           className="inline-block font-medium py-2 px-6 rounded-full shadow transition"
@@ -105,7 +105,7 @@ function Projects() {
         >
           See All Projects
         </Link>
-      </div> */}
+      </div>
     </div>
   );
 }

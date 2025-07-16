@@ -24,7 +24,7 @@ jobs:
 
       - name: Run ESLint
         run: cd my-app && npx eslint .
-        # command: npx elsint --fix
+        # command: npx eslint --fix
 
       - name: Run Prettier check
         run: cd my-app && npx prettier . --check

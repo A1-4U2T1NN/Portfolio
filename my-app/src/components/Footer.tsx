@@ -15,13 +15,13 @@ const Footer = () => {
 
         {/* Navigation (optional) */}
         <div className="flex space-x-6">
-          <a href="#projects" className="hover:text-white transition">
+          <a href="#Projects" className="hover:text-white transition">
             Projects
           </a>
-          <a href="#about" className="hover:text-white transition">
+          <a href="#About" className="hover:text-white transition">
             About
           </a>
-          <a href="#contact" className="hover:text-white transition">
+          <a href="#Contact" className="hover:text-white transition">
             Contact
           </a>
         </div>
@@ -29,7 +29,7 @@ const Footer = () => {
         {/* Social Icons */}
         <div className="flex space-x-4">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/A1-4U2T1NN"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white"
@@ -37,14 +37,14 @@ const Footer = () => {
             <Github className="w-5 h-5" />
           </a>
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/in/chigazo-graham/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white"
           >
             <Linkedin className="w-5 h-5" />
           </a>
-          <a href="mailto:you@example.com" className="hover:text-white">
+          <a href="mailto:cagraham224@gmail.com" className="hover:text-white">
             <Mail className="w-5 h-5" />
           </a>
         </div>
