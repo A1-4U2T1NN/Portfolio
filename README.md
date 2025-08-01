@@ -89,5 +89,6 @@ Your support means a lot! It motivates me to keep building, learning, and sharin
 
 ### Contact Me
 
-Want to connect or give direct feedback? Let’s chat on [LinkedIn](www.linkedin.com/in/chigazo-graham).
+Want to connect or give direct feedback? Let’s chat on 
+<a href="www.linkedin.com/in/chigazo-graham">LinkedIn</a>
 
