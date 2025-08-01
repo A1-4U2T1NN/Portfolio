@@ -81,6 +81,16 @@ Portfolio/
 ├── package.json            # Project dependencies and scripts
 └── vite.config.js          # Vite development/build configuration
 ```
+
+## Upcoming Additions
+- Downloadable Resume
+- Career Timeline Section
+- Project Gallery Filter Options
+- Blog Page
+- Testimonials Section
+- Dark Mode/Light Mode Toggle Switch
+- Visitor Counter
+
 ## Show Your Support
 
 If you found this portfolio inspiring or helpful, feel free to give it a ⭐️!
