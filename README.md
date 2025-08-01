@@ -92,3 +92,13 @@ Your support means a lot! It motivates me to keep building, learning, and sharin
 Want to connect or give direct feedback? Let’s chat on 
 <a href="www.linkedin.com/in/chigazo-graham">LinkedIn</a>
 
+## License
+
+This project is licensed under a [custom license](https://github.com/A1-4U2T1NN/Portfolio/tree/main?tab=License-1-ov-file), see the license page for more information.
+
+You are free to use, modify, and distribute this code for personal with proper attribution. No warranties are provided.
+
+---
+
+Feel free to fork and build your own portfolio using this as a foundation!
+
