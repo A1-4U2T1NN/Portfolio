@@ -1,0 +1,55 @@
+import Link from "next/link";
+
+function Banner() {
+  const getGreeting = () => {
+    const hour = new Date().getHours();
+    if (hour < 12) return "Good Morning";
+    if (hour < 18) return "Good Afternoon";
+    return "Good Evening";
+  };
+
+  return (
+    <div
+      className="relative min-h-screen flex flex-col justify-center items-center px-4 text-center space-y-4 bg-cover bg-center"
+      style={{
+        backgroundImage: `url(/assets/background.gif)`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
+      <div className="absolute inset-0 bg-grey-900 bg-opacity-50 z-0"></div>
+      <div
+        className="absolute top-0 left-0 w-full h-32 z-10 pointer-events-none"
+        style={{ backgroundImage: "linear-gradient(to bottom, #121212, transparent)" }}
+      />
+      <div
+        className="absolute -bottom-5 left-0 w-full h-32 z-10 pointer-events-none"
+        style={{ backgroundImage: "linear-gradient(to top, #121212, transparent)" }}
+      />
+
+      <div className="relative z-10 text-white px-6 py-4 w-screen" style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}>
+        <h1 className="text-4xl font-bold mb-2">
+          {getGreeting()}! My name is <span style={{ color: "#915f6d" }}>Chigazo Graham</span>
+        </h1>
+        <h2 className="text-3xl font-semibold mb-2">
+          I am a <span style={{ color: "#915f6d" }}>Software Developer</span>
+        </h2>
+        <h3 className="text-2xl mb-4">
+          Welcome to my portfolio — take a look around and check out some of the projects I’ve been working on!
+        </h3>
+
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-4">
+          <a href="#Contact" className="rounded-xl px-6 py-3 text-white transition duration-300 hover:opacity-80" style={{ backgroundColor: "#915f6e" }}>
+            Contact Me
+          </a>
+          <Link href="/projects" className="hover:underline text-lg font-medium hover:opacity-80" style={{ color: "#915f6e" }}>
+            Explore My Projects →
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Banner;
+
