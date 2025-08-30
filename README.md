@@ -1,114 +1,108 @@
-<h1 align="center">Chigazo's Portfolio Project</h1>
+<h1 align="center">Portfolio — Next.js (App Router)</h1>
 
-<p align="center">This is my personal portfolio where I share some of the projects I’ve built, show off a bit of my coding style, and give you a peek into what I do as a developer.</p>
+<p align="center">Personal portfolio built with Next.js 14 (App Router), TypeScript, and Tailwind CSS. It showcases projects, skills, credentials, and includes a contact form powered by a Next.js API route.</p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React-darkblue?label=Made%20With" alt="React Badge" />
-  <img src="https://img.shields.io/badge/Typescript-blue?label=Built%20Using" alt="TypeScript Badge" />
-  <img src="https://img.shields.io/badge/Vercel-purple?label=Deployed%20On" alt="Vercel Badge" />
+  <img src="https://img.shields.io/badge/Next.js-black?logo=nextdotjs&logoColor=white" alt="Next.js Badge" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" alt="TypeScript Badge" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white" alt="Tailwind Badge" />
+  <img src="https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white" alt="Vercel Badge" />
+  
 </p>
-<p align="center">
-  <img width="1470" height="742" alt="Screenshot 2025-07-25 at 2 32 10 PM" src="https://github.com/user-attachments/assets/99aa7fe3-89b3-4ac6-8e37-add668b51f90" />
-</p>
 
 <p align="center">
-  <a href="https://chigazos-portfolio.vercel.app">View My Website</a> 
-  <~~~>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeImviIgqXgY4xeQ9tfWYk_rDXdxKaPK0Bo_ve-D4VPNwbRzA/viewform?usp=header">Leave a Review</a>
+  <a href="https://chigazos-portfolio.vercel.app">Live Demo</a>
 </p>
 
 ## Tech Stack
 
-This project was built using modern web development tools and technologies:
-
-- React: For building a fast and dynamic single-page application
-- Tailwind CSS: Utility-first CSS framework for responsive design and theming
-- Vite: Lightning-fast development server and build tool
-- React Router: For managing smooth page navigation
-- Framer Motion: Powering the animations and page transitions
+- Next.js (App Router) for routing and server-side rendering
+- React 18 with TypeScript for type-safe UI development
+- Tailwind CSS + PostCSS for styling
+- Next.js API route for email sending via Nodemailer
+- Deployed on Vercel
 
 ## Features
-- Responsive Design – Fully optimized for both mobile and desktop devices to ensure a seamless experience across screen sizes.
-- Smooth Page Transitions – Animated transitions enhance user engagement and create a polished browsing experience.
-- Project Showcase – Highlights selected projects with live demos and source code links for easy exploration.
-- Theming & Design System – Built with a consistent UI design language to ensure clarity, accessibility, and visual harmony throughout the site.
 
-## Installation Instructions
-### Prerequisites
+- Responsive layout across mobile and desktop
+- Project gallery and skills showcase
+- Credentials and about sections
+- Contact form using API route at `/api/contact`
+- Custom 404 page
 
-Make sure you have `Node.js` and `Git` installed globally on your machine before getting started.
+## Getting Started
 
-### Get Started
+Prerequisites: Node.js 18+ and Git
 
-1. Clone The Repository
-<img width="597" height="222" alt="carbon-4" src="https://github.com/user-attachments/assets/80986974-629e-44c1-95d3-fcf32cbb46a8" />
+1. Clone the repo
+   `git clone <this-repo-url> && cd next-app`
+2. Install dependencies
+   `npm install`
+3. Configure environment variables (see below)
+4. Run the dev server
+   `npm run dev`
+5. Open the app at `http://localhost:3000`
 
-2. Install Dependencies
-- Make sure you have Node.js installed (v16+ recommended).
-<img width="243" height="204" alt="carbon-3" src="https://github.com/user-attachments/assets/bf345a2d-279f-41a6-ab19-22c84f8f741b" />
+## Environment Variables
 
-3. Start The Development Server
-<img width="243" height="204" alt="carbon-5" src="https://github.com/user-attachments/assets/d9d61a01-8a11-4116-bfe1-96ecabf868b8" />
+This app sends emails from the contact form using a Gmail transporter via Nodemailer. Create a `.env.local` file inside `next-app/` with:
 
-4. Open In Browser
-- Go to http://localhost:5173 to view the site.
-<img width="646" height="219" alt="Screenshot 2025-07-30 at 10 32 41 AM" src="https://github.com/user-attachments/assets/dbe87485-3a08-4fb9-a107-56ffe728ed3b" />
-
-5. Explore The Portfolio
-- Navigate through the site, view the source code, and make changes as you please. Enjoy!
-
-
-## Project Structure
-
-``` bash
-Portfolio/
-├── .github/workflow/       # GitHub Actions workflows and CI/CD configurations
-│
-├── src/                    # Source code
-│   ├── assets/             # Images, logos, icons, GIFs
-│   ├── components/         # Reusable UI components (Navbar, Footer, Cards, etc.)
-│   ├── icons/              # Custom icon components or SVGs
-│   ├── pages/              # Main page components (Home, Projects, Contact, etc.)
-│   ├── app.jsx             # Root app component with routes/layouts
-│   ├── index.css           # Global styles or Tailwind base configuration
-│   ├── vercel.json         # Vercel-specific deployment configuration
-│   └── main.jsx            # React DOM entry point
-│
-├── .gitignore              # Specifies intentionally untracked files for Git
-├── .prettierignore         # Files to ignore during code formatting
-├── eslint.config.js        # ESLint configuration for linting rules
-├── index.html              # HTML entry point for Vite
-├── package.json            # Project dependencies and scripts
-└── vite.config.js          # Vite development/build configuration
+```
+EMAIL_USER="your.email@example.com"
+EMAIL_PASS="your-app-password"
 ```
 
-## Upcoming Additions
-- Downloadable Resume
-- Career Timeline Section
-- Project Gallery Filter Options
-- Blog Page
-- Testimonials Section
-- Dark Mode/Light Mode Toggle Switch
-- Visitor Counter
+Notes:
+- Use a Gmail App Password (recommended) or SMTP creds.
+- Never commit real secrets. Use `.env.local`, which Next.js ignores by default.
 
-## Show Your Support
+## Project Structure (Next.js)
 
-If you found this portfolio inspiring or helpful, feel free to give it a ⭐️!
+```bash
+next-app/
+├── app/
+│   ├── api/contact/route.ts     # API route for contact form (Nodemailer)
+│   ├── projects/page.tsx        # Projects page
+│   ├── globals.css              # Global styles (Tailwind base)
+│   ├── layout.tsx               # Root layout
+│   ├── not-found.tsx            # Custom 404 page
+│   └── page.tsx                 # Home page
+├── components/                  # Reusable UI components
+│   ├── About.tsx
+│   ├── Banner.tsx
+│   ├── Credentials.tsx
+│   ├── Footer.tsx
+│   ├── Navbar.tsx
+│   ├── ProjectGallery.tsx
+│   ├── Projects.tsx
+│   ├── Skills.tsx
+│   └── Timeline.tsx
+├── public/                      # Static assets and icons
+├── postcss.config.mjs           # Tailwind/PostCSS config
+├── next.config.mjs              # Next.js config
+├── tsconfig.json                # TypeScript config
+├── package.json                 # Scripts and dependencies
+└── README.md                    # This file
+```
 
-Your support means a lot! It motivates me to keep building, learning, and sharing.
+## Available Scripts (from `next-app/`)
 
-### Contact Me
+- `npm run dev`: Start dev server on `localhost:3000`
+- `npm run build`: Create production build
+- `npm start`: Run production server locally
 
-Want to connect or give direct feedback? Let’s chat on 
-<a href="www.linkedin.com/in/chigazo-graham">LinkedIn</a>
+## Deployment
+
+- Vercel: Import the `next-app` directory as the project root.
+- Set `EMAIL_USER` and `EMAIL_PASS` as environment variables in the Vercel project settings.
 
 ## License
 
-This project is licensed under a [custom license](https://github.com/A1-4U2T1NN/Portfolio/tree/main?tab=License-1-ov-file), see the license page for more information.
+See `LICENSE` for details.
 
-You are free to use, modify, and distribute this code for personal with proper attribution. No warranties are provided.
+## Contact
 
----
+- Portfolio: https://chigazos-portfolio.vercel.app
+- LinkedIn: https://www.linkedin.com/in/chigazo-graham
 
-Feel free to fork and build your own portfolio using this as a foundation!
-
+Feel free to fork this project and adapt it for your own portfolio.
