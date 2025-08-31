@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 export default function NotFound() {
   return (
     <div className="flex flex-col items-center justify-start h-screen text-center px-4 pt-30">
@@ -6,7 +7,7 @@ export default function NotFound() {
         Oops... Page Not Found
       </h1>
       <p className="text-gray-400 mb-4 max-w-md">
-        The page you're looking for doesn't exist. If you're lost, click below
+        The page you&apos;re looking for doesn&apos;t exist. If you&apos;re lost, click below
         to return to the home page.
       </p>
       <a
@@ -18,4 +19,3 @@ export default function NotFound() {
     </div>
   );
 }
-

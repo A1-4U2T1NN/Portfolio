@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 function About() {
   return (
     <div className="min-h-screen px-4 sm:px-6 py-8 bg-transparent flex flex-col items-center text-white">
@@ -56,4 +57,3 @@ function About() {
 }
 
 export default About;
-

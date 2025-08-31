@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable @next/next/no-img-element */
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -98,4 +99,3 @@ const CredentialsCarousel = () => {
 };
 
 export default CredentialsCarousel;
-

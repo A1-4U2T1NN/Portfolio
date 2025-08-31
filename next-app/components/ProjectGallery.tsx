@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 // Minimal port: if you have a richer data set, plug it in here
@@ -56,4 +57,3 @@ export default function ProjectGallery() {
     </div>
   );
 }
-
