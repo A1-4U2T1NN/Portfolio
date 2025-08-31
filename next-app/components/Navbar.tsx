@@ -26,14 +26,19 @@ function Navbar() {
         <div className="flex justify-between items-center h-16">
           <a href="#Banner" onClick={() => setMenuOpen(false)}>
             <img
-              src={scrolled ? "/assets/CGLogoWhite.png" : "/assets/CGLogoBlack.png"}
+              src={
+                scrolled ? "/assets/CGLogoWhite.png" : "/assets/CGLogoBlack.png"
+              }
               alt="Chigazo Graham Logo"
               className="h-55 w-auto transition duration-300 cursor-pointer"
             />
           </a>
 
           <div className="md:hidden">
-            <button onClick={toggleMenu} className="text-white text-2xl p-2 rounded transition">
+            <button
+              onClick={toggleMenu}
+              className="text-white text-2xl p-2 rounded transition"
+            >
               {menuOpen ? <X /> : <Menu />}
             </button>
           </div>

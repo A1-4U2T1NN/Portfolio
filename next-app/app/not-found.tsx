@@ -7,8 +7,8 @@ export default function NotFound() {
         Oops... Page Not Found
       </h1>
       <p className="text-gray-400 mb-4 max-w-md">
-        The page you&apos;re looking for doesn&apos;t exist. If you&apos;re lost, click below
-        to return to the home page.
+        The page you&apos;re looking for doesn&apos;t exist. If you&apos;re
+        lost, click below to return to the home page.
       </p>
       <a
         href="/"

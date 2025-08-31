@@ -51,7 +51,9 @@ const SkillItem = ({ name, icon }: Skill) => {
 const Skills = () => {
   return (
     <section className="py-12 px-4 sm:px-6 lg:px-8">
-      <h1 className="text-3xl font-bold text-center mb-10 text-white">Technical Skills</h1>
+      <h1 className="text-3xl font-bold text-center mb-10 text-white">
+        Technical Skills
+      </h1>
       {Object.entries(skillCategories).map(([category, skills]) => (
         <div key={category} className="mb-12">
           <h2 className="text-xl font-semibold mb-6 text-white">{category}</h2>
